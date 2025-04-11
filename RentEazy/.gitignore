@@ -1,0 +1,60 @@
+# Gradle files
+.gradle/
+/build/
+build/
+RentEazy/build/
+/RentEazy/build/
+RentEazy/app/build/
+/RentEazy/app/build/
+/app/build/
+app/build/
+.gradle/configuration-cache/
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Local configuration file
+local.properties
+
+# Android Studio generated files
+*.iml
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/vcs.xml
+
+# Build files
+app/*.apk
+app/*.aab
+app/*.hprof
+**/build/
+**/release/
+**/debug/
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+**/outputs/logs/
+
+# Firebase
+google-services.json
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build folder generated in Android Studio
+.externalNativeBuild/
+.cxx/
