@@ -152,21 +152,27 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun saveUserToFirestore(user: User) {
-        Log.d(TAG, "Saving user data to Firestore")
-        db.collection("users")
-            .document(user.id)
-            .set(user)
-            .addOnSuccessListener {
-                Log.d(TAG, "User data saved successfully")
-                Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
+    Log.d(TAG, "Saving user data to Firestore")
+    db.collection("users")
+        .document(user.id)
+        .set(user)
+        .addOnSuccessListener {
+            Log.d(TAG, "User data saved successfully")
+            Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+        .addOnFailureListener { e ->
+            Log.e(TAG, "Error saving user data", e)
+            registerButton.isEnabled = true
+            val errorMessage = when {
+                e.message?.contains("PERMISSION_DENIED") == true -> 
+                    "Permission denied. Please check Firebase configuration."
+                e.message?.contains("UNAVAILABLE") == true -> 
+                    "Service unavailable. Please check your internet connection."
+                else -> "Failed to save user data: ${e.message}"
             }
-            .addOnFailureListener { e ->
-                Log.e(TAG, "Error saving user data", e)
-                registerButton.isEnabled = true
-                Toast.makeText(this, "Failed to save user data: ${e.message}",
-                    Toast.LENGTH_SHORT).show()
-            }
+            Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
+        }
     }
 }
