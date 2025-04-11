@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "114114793549",
+    "project_id": "renteazy-6948e",
+    "storage_bucket": "renteazy-6948e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114114793549:android:d7ea9f2404bc7b25c7cc04",
+        "android_client_info": {
+          "package_name": "com.renteazy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvjvePgpYki7ZNH8ot6WdbJUQ7cXs5BQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

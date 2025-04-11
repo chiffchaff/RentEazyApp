@@ -1,0 +1,31 @@
+RentEazy
+├── app
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── renteazy
+│   │   │   │           ├── activities
+│   │   │   │           │   ├── MainActivity.kt
+│   │   │   │           │   ├── LoginActivity.kt
+│   │   │   │           │   └── RegisterActivity.kt
+│   │   │   │           ├── fragments
+│   │   │   │           │   ├── DashboardFragment.kt
+│   │   │   │           │   ├── PaymentsFragment.kt
+│   │   │   │           │   └── ProfileFragment.kt
+│   │   │   │           ├── models
+│   │   │   │           │   ├── User.kt
+│   │   │   │           │   ├── Property.kt
+│   │   │   │           │   └── Payment.kt
+│   │   │   │           ├── adapters
+│   │   │   │           ├── utils
+│   │   │   │           └── repositories
+│   │   │   └── res
+│   │   │       ├── layout
+│   │   │       ├── values
+│   │   │       └── menu
+│   │   └── test
+├── gradle
+├── build.gradle
+├── settings.gradle
+└── README.md

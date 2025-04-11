@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_types">
+        <item>Tenant</item>
+        <item>Property Owner</item>
+    </string-array>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <string name="app_name">RentEazy</string>
+    <string name="gcm_defaultSenderId" translatable="false">114114793549</string>
+    <string name="google_api_key" translatable="false">AIzaSyCvjvePgpYki7ZNH8ot6WdbJUQ7cXs5BQk</string>
+    <string name="google_app_id" translatable="false">1:114114793549:android:d7ea9f2404bc7b25c7cc04</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCvjvePgpYki7ZNH8ot6WdbJUQ7cXs5BQk</string>
+    <string name="google_storage_bucket" translatable="false">renteazy-6948e.firebasestorage.app</string>
+    <string name="project_id" translatable="false">renteazy-6948e</string>
+    <style name="Theme.RentEazy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+</resources>

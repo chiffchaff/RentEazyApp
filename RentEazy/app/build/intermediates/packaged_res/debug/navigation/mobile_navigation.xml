@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.renteazy.fragments.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_payments"
+        android:name="com.renteazy.fragments.PaymentsFragment"
+        android:label="Payments" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.renteazy.fragments.ProfileFragment"
+        android:label="Profile" />
+
+</navigation>
