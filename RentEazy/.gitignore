@@ -1,41 +1,50 @@
-# Gradle files
+# Gradle
+.gradle
 .gradle/
+/.gradle/
+*/.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+# Build
+**/build/
+!/build/
 /build/
 build/
-RentEazy/build/
-/RentEazy/build/
-RentEazy/app/build/
-/RentEazy/app/build/
-/app/build/
-app/build/
-.gradle/configuration-cache/
-gradle/wrapper/gradle-wrapper.jar
-gradlew
-gradlew.bat
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_
+*.dex
 
-# Local configuration file
+# Local configuration
 local.properties
+/local.properties
 
-# Android Studio generated files
+# IDE
 *.iml
 .idea/
-.idea/caches/
-.idea/libraries/
-.idea/modules.xml
+/.idea/
+.idea/*
+**/.idea/
 .idea/workspace.xml
-.idea/navEditor.xml
+.idea/tasks.xml
+.idea/gradle.xml
 .idea/assetWizardSettings.xml
-.idea/vcs.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
 
-# Build files
-app/*.apk
-app/*.aab
-app/*.hprof
-**/build/
-**/release/
-**/debug/
+# Logs
+*.log
+logs/
+/logs/
 
-# OS-specific files
+# OS specific
 .DS_Store
 .DS_Store?
 ._*
@@ -44,17 +53,23 @@ app/*.hprof
 ehthumbs.db
 Thumbs.db
 
-# Logs
-*.log
-**/outputs/logs/
+# Generated files
+bin/
+gen/
+out/
+release/
+debug/
+captures/
 
-# Firebase
-google-services.json
+# Android Studio Navigation editor
+.navigation/
+
+# Android Studio captures folder
+captures/
 
 # Keystore files
 *.jks
 *.keystore
 
-# External native build folder generated in Android Studio
-.externalNativeBuild/
-.cxx/
+# Google Services (e.g. APIs or Firebase)
+google-services.json

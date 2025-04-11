@@ -3,6 +3,7 @@ package com.renteazy.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -24,6 +25,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "onCreate: Starting MainActivity initialization")
         setContentView(R.layout.activity_main)
+        
+        // Handle back button press with proper navigation
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (!navController.navigateUp()) {
+                    finish()
+                }
+            }
+        })
 
         try {
             FirebaseApp.initializeApp(this)
